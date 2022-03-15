@@ -14,30 +14,61 @@
 	</head>
 	<body>
     <div class="container">
-      <h1>Dru's Cinema</h1>
-      <p>Welcome!</p>
-      <p>Please insert age below to continue</p>
       <div class="row">
-        <div class="card-content">
+        <div class="col-md-6">
+          <h1>Dru's Cinema</h1>
+          <p>Welcome!</p>
+          <p>Please select age group to continue</p>
           <form class="age">
-            <div class="col-md-4">
-              <input type="radio" id="kids" name="my-age">
-              <label for="kids">KIDS (12 and below)</label>
-            </div><br>
-            <div class="col-md-4">
+            <p>
+              <input type="radio" id="kids" name="my-age" required>
+              <label for="kids">KIDS (12 and below)</label><br>  
+            </p>
+            <p>
               <input type="radio" id="teens" name="my-age">
-              <label for="teens">TEENS (13 to 17)</label>
-            </div><br>
-            <div class="col-md-4">
+              <label for="teens">TEENS (13 to 17)</label>  
+            </p>
+            <p>
               <input type="radio" id="adults" name="my-age">
-              <label for="adults">ADULTS (18 and above)</label>
-            </div><br>
+              <label for="adults">ADULTS (18 and above)</label><br>  
+            </p>
             <button type="submit">SUBMIT</button>
-          </form>
+          </form><br>
+        </div>
+        <div class="col-md-6">
+          <div class="movies">
+            <h1>MOVIE LIST</h1><br>
+            <div id="hidden-kids">
+              <h2>KIDS MOVIES</h2>
+              <input type="radio" id="kid1" name="kid-movie">
+              <label for="kid1">Ice Age</label><br>
+              <input type="radio" id="kid2" name="kid-movie">
+              <label for="kid2">Despicable Me</label><br>
+              <input type="radio" id="kid3" name="kid-movie">
+              <label for="kid3">Madagascar</label><br>
+            </div><br>
+            <div id="hidden-teens">
+              <h2>TEEN MOVIES</h2>
+              <input type="radio" id="teen1" name="teen-movie">
+              <label for="teen1">Twilight</label><br>
+              <input type="radio" id="teen2" name="teen-movie">
+              <label for="teen2">Hunger Games</label><br>
+              <input type="radio" id="teen3" name="teen-movie">
+              <label for="teen3">Divergent</label><br>
+            </div><br>
+            <div id="hidden-adults">
+              <h2>ADULTS MOVIES</h2>
+              <input type="radio" id="adult1" name="adult-movie">
+              <label for="adult1">Sausage Party</label><br>
+              <input type="radio" id="adult2" name="adult-movie">
+              <label for="adult2">Saw</label><br>
+              <input type="radio" id="adult3" name="adult-movie">
+              <label for="adult3">Tenet</label><br>
+            </div><br>
+          </div>
         </div>
       </div>
-    </div>
-			
+    </div>	
 
 		<script src="./js/scripts.js"></script>
 	</body>
