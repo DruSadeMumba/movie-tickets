@@ -32,41 +32,56 @@
               <input type="radio" id="adults" name="my-age">
               <label for="adults">ADULTS (18 and above)</label><br>  
             </p>
-            <button type="submit">SUBMIT</button>
+            <button onclick="validate1()" type="submit">SUBMIT</button>
           </form><br>
         </div>
         <div class="col-md-6">
-          <div class="movies">
             <h1>MOVIE LIST</h1><br>
-            <div id="hidden-kids">
-              <h2>KIDS MOVIES</h2>
-              <input type="radio" id="kid1" name="kid-movie">
-              <label for="kid1">Ice Age</label><br>
-              <input type="radio" id="kid2" name="kid-movie">
-              <label for="kid2">Despicable Me</label><br>
-              <input type="radio" id="kid3" name="kid-movie">
-              <label for="kid3">Madagascar</label><br>
-            </div><br>
-            <div id="hidden-teens">
-              <h2>TEEN MOVIES</h2>
-              <input type="radio" id="teen1" name="teen-movie">
-              <label for="teen1">Twilight</label><br>
-              <input type="radio" id="teen2" name="teen-movie">
-              <label for="teen2">Hunger Games</label><br>
-              <input type="radio" id="teen3" name="teen-movie">
-              <label for="teen3">Divergent</label><br>
-            </div><br>
-            <div id="hidden-adults">
-              <h2>ADULTS MOVIES</h2>
-              <input type="radio" id="adult1" name="adult-movie">
-              <label for="adult1">Sausage Party</label><br>
-              <input type="radio" id="adult2" name="adult-movie">
-              <label for="adult2">Saw</label><br>
-              <input type="radio" id="adult3" name="adult-movie">
-              <label for="adult3">Tenet</label><br>
-            </div><br>
-          </div>
+            <form action="" class="movies">
+              <div id="hidden-kids">
+                <h2>KIDS MOVIES</h2>
+                <input type="radio" id="kid1" name="kid-movie" required>
+                <label for="kid1">Ice Age</label><br>
+                <input type="radio" id="kid2" name="kid-movie">
+                <label for="kid2">Despicable Me</label><br>
+                <input type="radio" id="kid3" name="kid-movie">
+                <label for="kid3">Madagascar</label><br>
+              </div>
+              <div id="hidden-teens">
+                <h2>TEEN MOVIES</h2>
+                <input type="radio" id="teen1" name="teen-movie" required>
+                <label for="teen1">Twilight</label><br>
+                <input type="radio" id="teen2" name="teen-movie">
+                <label for="teen2">Hunger Games</label><br>
+                <input type="radio" id="teen3" name="teen-movie">
+                <label for="teen3">Divergent</label><br>
+              </div>
+              <div id="hidden-adults">
+                <h2>ADULTS MOVIES</h2>
+                <input type="radio" id="adult1" name="adult-movie" required>
+                <label for="adult1">Sausage Party</label><br>
+                <input type="radio" id="adult2" name="adult-movie">
+                <label for="adult2">Saw</label><br>
+                <input type="radio" id="adult3" name="adult-movie">
+                <label for="adult3">Tenet</label><br>
+              </div>
+                <button onclick="validate2()" type="submit">SUBMIT</button>
+            </form>            
         </div>
+          <div>
+            <h3>SELECT TIME</h3>
+            <form action="" class="time">
+              <input type="radio" id="morning" name="time-period" required>
+              <label for="morning">0900hrs</label><br>
+              <input type="radio" id="afternoon" name="time-period">
+              <label for="afternoon">1300hrs</label><br>
+              <input type="radio" id="evening" name="time-period">
+              <label for="evening">1700hrs</label><br>
+              <input type="radio" id="night" name="time-period">
+              <label for="night">2100hrs</label><br>
+              <button onclick="validate3()" type="submit">SUBMIT</button>
+            </form>
+          </div>
       </div>
     </div>	
 
