@@ -1,13 +1,24 @@
-*	{
-	font-family: fantasy;
+@media screen and (min-width: 600px)  {
+	*	{
+		font-family: fantasy;
+	}
+	body  {
+		text-align: center;
+	}
 }
-/* .hidden-kids  {
-	display: none;
+@media screen and (min-width: 900px)  {
+	*	{
+		font-family: fantasy;
+	}
+	body  {
+		text-align: center;
+	}
 }
-.hidden-teens  {
-	display: none;
+@media screen and (min-width: 100px)  {
+	*	{
+		font-family: fantasy;
+	}
+	body  {
+		text-align: center;
+	}
 }
-.hidden-adults  {
-	display: none;
-}
- */

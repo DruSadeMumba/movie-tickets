@@ -19,9 +19,9 @@
         <h1>Welcome!</h1>
         <h2>Please fill in the form below</h2>
       </div>
-      <form id="customer-details">
+      <form action="" id="customer-details">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 col-ms-6 col-xs-6">
             <div class="form-group">
               <h3>Select age group</h3>
               <p>
@@ -41,61 +41,64 @@
               </p>
             </div><br>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 col-ms-6 col-xs-6">
             <h2>Select movie</h2>
             <div class="form-group movies">
               <div class="movies_content kids">
                 <h4>KIDS MOVIES</h4>
-                <input type="radio" id="kid1" name="kid-movie" required>
+                <input type="radio" id="kid1"required>
                 <label for="kid1">Ice Age</label><br>
-                <input type="radio" id="kid2" name="kid-movie">
+                <input type="radio" id="kid2">
                 <label for="kid2">Despicable Me</label><br>
-                <input type="radio" id="kid3" name="kid-movie">
+                <input type="radio" id="kid3">
                 <label for="kid3">Madagascar</label><br>
               </div>
               <div class="movies_content teens">
                 <h4>TEEN MOVIES</h4>
-                <input type="radio" id="teen1" name="teen-movie" required>
+                <input type="radio" id="teen1" required>
                 <label for="teen1">Twilight</label><br>
-                <input type="radio" id="teen2" name="teen-movie">
+                <input type="radio" id="teen2">
                 <label for="teen2">Hunger Games</label><br>
-                <input type="radio" id="teen3" name="teen-movie">                
+                <input type="radio" id="teen3">                
                 <label for="teen3">Divergent</label><br>
               </div>
               <div class="movies_content adults">
                 <h4>ADULTS MOVIES</h4>
-                <input type="radio" id="adult1" name="adult-movie" required>
+                <input type="radio" id="adult1" required>
                 <label for="adult1">Sausage Party</label><br>
-                <input type="radio" id="adult2" name="adult-movie">
+                <input type="radio" id="adult2">
                 <label for="adult2">Saw</label><br>
-                <input type="radio" id="adult3" name="adult-movie">
+                <input type="radio" id="adult3">
                 <label for="adult3">Tenet</label><br>
               </div>
             </div>
           </div>
         </div><br>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 col-ms-6 col-xs-6">
             <div class="form-group">
               <h2>Select number of tickets</h2>
               <label for="numb">NUMBER OF TICKETS</label>
-              <input type="number" id="numb" min="0" max="10" required>
+              <input type="number" id="numb" min="1" max="10" required>
             </div><br>
           </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="radio" id="morning" name="time-period" required>
-              <label for="morning">0900hrs</label><br>
-              <input type="radio" id="afternoon" name="time-period">
-              <label for="afternoon">1300hrs</label><br>
-              <input type="radio" id="evening" name="time-period">
-              <label for="evening">1700hrs</label><br>
-              <input type="radio" id="night" name="time-period">
-              <label for="night">2100hrs</label><br>
-            </div><br>
+          <div class="col-md-6 col-ms-6 col-xs-6">
+            <h2>Select time</h2>
+            <div class="form-group time">
+              <div id="time-select">
+                <input type="radio" id="morning" name="time-period" required>
+                <label for="morning">0900hrs</label><br>
+                <input type="radio" id="afternoon" name="time-period">
+                <label for="afternoon">1300hrs</label><br>
+                <input type="radio" id="evening" name="time-period">
+                <label for="evening">1700hrs</label><br>
+                <input type="radio" id="night" name="time-period">
+                <label for="night">2100hrs</label><br>
+              </div>
+            </div>
           </div>
         </div>
-        <button onclick="validate()" type="submit">SUBMIT</button>
+        <button onclick="validate()" type="submit" >SUBMIT</button>
       </form>
     </div>	
 
