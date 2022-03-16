@@ -14,67 +14,71 @@
 	</head>
 	<body>
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h1>Dru's Cinema</h1>
-          <p>Welcome!</p>
-          <p>Please select age group to continue</p>
-          <form class="age">
-            <p>
-              <input type="radio" id="kids" name="my-age" required>
-              <label for="kids">KIDS (12 and below)</label><br>  
-            </p>
-            <p>
-              <input type="radio" id="teens" name="my-age">
-              <label for="teens">TEENS (13 to 17)</label>  
-            </p>
-            <p>
-              <input type="radio" id="adults" name="my-age">
-              <label for="adults">ADULTS (18 and above)</label><br>  
-            </p>
-            <button onclick="validate1()" type="submit">SUBMIT</button>
-          </form><br>
-        </div>
-        <div class="col-md-6">
-          <h1>MOVIE LIST</h1><br>
-          <form action="" class="movies">
-            <div id="hidden-kids">
-              <h2>KIDS MOVIES</h2>
-              <input type="radio" id="kid1" name="kid-movie" required>
-              <label for="kid1">Ice Age</label><br>
-              <input type="radio" id="kid2" name="kid-movie">
-              <label for="kid2">Despicable Me</label><br>
-              <input type="radio" id="kid3" name="kid-movie">
-              <label for="kid3">Madagascar</label><br>
-            </div>
-            <div id="hidden-teens">
-              <h2>TEEN MOVIES</h2>
-              <input type="radio" id="teen1" name="teen-movie" required>
-              <label for="teen1">Twilight</label><br>
-              <input type="radio" id="teen2" name="teen-movie">
-              <label for="teen2">Hunger Games</label><br>
-              <input type="radio" id="teen3" name="teen-movie">                <label for="teen3">Divergent</label><br>
-            </div>
-            <div id="hidden-adults">
-              <h2>ADULTS MOVIES</h2>
-              <input type="radio" id="adult1" name="adult-movie" required>
-              <label for="adult1">Sausage Party</label><br>
-              <input type="radio" id="adult2" name="adult-movie">
-              <label for="adult2">Saw</label><br>
-              <input type="radio" id="adult3" name="adult-movie">
-              <label for="adult3">Tenet</label><br>
-            </div>
-            <button onclick="validate2()" type="submit">SUBMIT</button>
-          </form><br><br>            
-        </div>
+      <div class="card-header">
+        <h1>Dru's Cinema</h1>
+        <h1>Welcome!</h1>
+        <h2>Please fill in the form below</h2>
       </div>
-      <div class="row">
-        <div class="col-md-6">
-          <form id="tkt-and-time">
+      <form id="customer-detais">
+        <div class="row">
+          <div class="col-md-6">
             <div class="form-group">
+              <h3>Select age group</h3>
+              <p>
+                <input type="radio" id="kids" name="my-age" required>
+                <label for="kids">KIDS (12 and below)</label><br>  
+              </p>
+              <p>
+                <input type="radio" id="teens" name="my-age">
+                <label for="teens">TEENS (13 to 17)</label>  
+              </p>
+              <p>
+                <input type="radio" id="adults" name="my-age">
+                <label for="adults">ADULTS (18 and above)</label><br>  
+              </p>
+            </div><br>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <h2>Select movie</h2>
+              <div id="hidden-kids">
+                <h2>KIDS MOVIES</h2>
+                <input type="radio" id="kid1" name="kid-movie" required>
+                <label for="kid1">Ice Age</label><br>
+                <input type="radio" id="kid2" name="kid-movie">
+                <label for="kid2">Despicable Me</label><br>
+                <input type="radio" id="kid3" name="kid-movie">
+                <label for="kid3">Madagascar</label><br>
+              </div>
+              <div id="hidden-teens">
+                <h2>TEEN MOVIES</h2>
+                <input type="radio" id="teen1" name="teen-movie" required>
+                <label for="teen1">Twilight</label><br>
+                <input type="radio" id="teen2" name="teen-movie">
+                <label for="teen2">Hunger Games</label><br>
+                <input type="radio" id="teen3" name="teen-movie">                <label for="teen3">Divergent</label><br>
+              </div>
+              <div id="hidden-adults">
+                <h2>ADULTS MOVIES</h2>
+                <input type="radio" id="adult1" name="adult-movie" required>
+                <label for="adult1">Sausage Party</label><br>
+                <input type="radio" id="adult2" name="adult-movie">
+                <label for="adult2">Saw</label><br>
+                <input type="radio" id="adult3" name="adult-movie">
+                <label for="adult3">Tenet</label><br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <h2>Select number of tickets</h2>
               <label for="num-of-tkt">NUMBER OF TICKETS</label>
               <input type="number" id="num-of-tkt" required>
             </div><br>
+          </div>
+          <div class="col-md-6">
             <div class="form-group">
               <input type="radio" id="morning" name="time-period" required>
               <label for="morning">0900hrs</label><br>
@@ -85,10 +89,10 @@
               <input type="radio" id="night" name="time-period">
               <label for="night">2100hrs</label><br>
             </div><br>
-            <button onclick="validate3()" type="submit">SUBMIT</button>
-          </form>
+          </div>
         </div>
-      </div>
+        <button onclick="validate()" type="submit">SUBMIT</button>
+      </form>
     </div>	
 
 		<script src="./js/scripts.js"></script>
