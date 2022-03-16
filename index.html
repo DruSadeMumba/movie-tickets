@@ -19,29 +19,32 @@
         <h1>Welcome!</h1>
         <h2>Please fill in the form below</h2>
       </div>
-      <form id="customer-detais">
+      <form id="customer-details">
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
               <h3>Select age group</h3>
               <p>
                 <label class="age-select" data-radio="kids">
-                  <input type="radio" class="input" name="my-age" required>KIDS (12 and below)</label><br>  
+                  <input type="radio" class="input" name="my-age" required>KIDS (12 and below)
+                </label><br>  
               </p>
               <p>
                 <label class="age-select" data-radio="teens">
-                  <input type="radio" class="input" name="my-age" required>TEENS (13 to 17)</label><br>  
+                  <input type="radio" class="input" name="my-age" required>TEENS (13 to 17)
+                </label><br>  
               </p>
               <p>
                 <label class="age-select" data-radio="adults">
-                  <input type="radio" class="input" name="my-age" required>ADULTS (18 and above)</label><br>  
+                  <input type="radio" class="input" name="my-age" required>ADULTS (18 and above)
+                </label><br>  
               </p>
             </div><br>
           </div>
           <div class="col-md-6">
             <h2>Select movie</h2>
             <div class="form-group movies">
-              <div class="movies_content hidden-kids">
+              <div class="movies_content kids">
                 <h4>KIDS MOVIES</h4>
                 <input type="radio" id="kid1" name="kid-movie" required>
                 <label for="kid1">Ice Age</label><br>
@@ -50,7 +53,7 @@
                 <input type="radio" id="kid3" name="kid-movie">
                 <label for="kid3">Madagascar</label><br>
               </div>
-              <div class="movies_content hidden-teens">
+              <div class="movies_content teens">
                 <h4>TEEN MOVIES</h4>
                 <input type="radio" id="teen1" name="teen-movie" required>
                 <label for="teen1">Twilight</label><br>
@@ -59,7 +62,7 @@
                 <input type="radio" id="teen3" name="teen-movie">                
                 <label for="teen3">Divergent</label><br>
               </div>
-              <div class="movies_content hidden-adults">
+              <div class="movies_content adults">
                 <h4>ADULTS MOVIES</h4>
                 <input type="radio" id="adult1" name="adult-movie" required>
                 <label for="adult1">Sausage Party</label><br>
@@ -70,13 +73,13 @@
               </div>
             </div>
           </div>
-        </div>
+        </div><br>
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
               <h2>Select number of tickets</h2>
-              <label for="num-of-tkt">NUMBER OF TICKETS</label>
-              <input type="number" id="num-of-tkt" required>
+              <label for="numb">NUMBER OF TICKETS</label>
+              <input type="number" id="numb" min="0" max="10" required>
             </div><br>
           </div>
           <div class="col-md-6">
