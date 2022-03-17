@@ -1,4 +1,13 @@
 /* Business Logic */
+function movieSelected(movie, number, times) {
+	this.movie = movie;
+	this.number = number;
+	this.times = times;
+}
+movieSelected.prototype.selection = function () {
+	return this.movie + " " + "number of tickets:" + " " + this.number + " " + "at" + " " + this.times;
+}
+
 function validate() {
 	var age = document.getElementsByClassName("age-select");
 	var movie = document.getElementsByClassName("movies_content");
@@ -12,6 +21,8 @@ function validate() {
 		document.location.href="checkout.html"
 	}
 }
+
+
 
 /* UI Logic */
 $(document).ready(function(){
